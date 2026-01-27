@@ -61,6 +61,19 @@
         </div>
     </header>
 
+    <section class="trust-bar">
+        <div class="trust-container">
+            <p>Authorized Dealer & Rebate Partner</p>
+            <div class="logo-grid">
+                <img src="amana.png" alt="Amana Heating & Air Conditioning" class="trust-logo">
+                <img src="centerpoint.png" alt="CenterPoint Energy" class="trust-logo">
+                <img src="carrier.png" alt="Carrier Authorized Dealer" class="trust-logo" loading="lazy">
+                <img src="trane.png" alt="Trane HVAC" class="trust-logo">
+                <img src="lennox.png" alt="Lennox Innovation" class="trust-logo">
+            </div>
+        </div>
+    </section>
+
     <div class="fixed bottom-0 left-0 right-0 p-4 md:hidden z-[100]">
         <a href="tel:5555555555" class="flex items-center justify-center gap-3 bg-red-600 text-white w-full py-5 rounded-2xl font-black text-xl shadow-[0_-10px_25px_rgba(220,38,38,0.3)] border-2 border-white/20 animate-bounce-subtle">
             <i class="fas fa-phone-alt"></i> CALL EMERGENCY TECH NOW
@@ -93,6 +106,44 @@
             50% { transform: translateY(-5px); }
         }
         .animate-bounce-subtle { animation: bounce-subtle 3s infinite ease-in-out; }
+
+        /* Trust Bar Styles */
+        .trust-bar {
+            background-color: #f8fafc;
+            padding: 3rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .trust-container {
+            max-width: 80rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .trust-container p {
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        .logo-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        .trust-logo {
+            height: 3rem;
+            width: auto;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s;
+        }
+        .trust-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
     </style>
 </body>
 </html>
